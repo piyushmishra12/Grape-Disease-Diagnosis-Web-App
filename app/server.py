@@ -9,13 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1MSFDwWmNiy80yrNgxE6qpYgl4_0R4dSh'
-export_file_name = 'resnet34-grape.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1gCo3NEyo6PdpqDoDJklW1BCXPixvyT4W'
+export_file_name = 'laptop.pkl'
 
-classes = ['Grape___healthy',
- 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)',
- 'Grape___Black_rot',
- 'Grape___Esca_(Black_Measles)']
+classes = ['2', '1', '3']
 path = Path(__file__).parent
 
 app = Starlette()
